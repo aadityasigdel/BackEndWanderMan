@@ -26,6 +26,8 @@ namespace NewProject.Models
 
         public bool Reservation {set; get;}
 
+        public List<HotelBookings> HotelBookings {get; set;} =new List<HotelBookings>();
+
 
     }
-}
+} 

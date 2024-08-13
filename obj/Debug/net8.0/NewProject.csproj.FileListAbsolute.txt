@@ -138,3 +138,17 @@ D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\runti
 D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\obj\Debug\net8.0\NewProject.sourcelink.json
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\drive\OneDrive\Desktop\DailyTesting\BackEnd\NewProject\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
