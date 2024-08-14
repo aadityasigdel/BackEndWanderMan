@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -7,11 +8,30 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace NewProject.Migrations
 {
     /// <inheritdoc />
-    public partial class In : Migration
+    public partial class Int : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Hotel",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    Price = table.Column<int>(type: "integer", nullable: false),
+                    Ratings = table.Column<int>(type: "integer", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: false),
+                    Image = table.Column<List<string>>(type: "text[]", nullable: false),
+                    Cancelation = table.Column<bool>(type: "boolean", nullable: false),
+                    Reservation = table.Column<bool>(type: "boolean", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Hotel", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "SignUp",
                 columns: table => new
@@ -25,6 +45,22 @@ namespace NewProject.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_SignUp", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Travel",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    Price = table.Column<int>(type: "integer", nullable: false),
+                    Image = table.Column<List<string>>(type: "text[]", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Travel", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -80,6 +116,12 @@ namespace NewProject.Migrations
         {
             migrationBuilder.DropTable(
                 name: "HotelBookings");
+
+            migrationBuilder.DropTable(
+                name: "Travel");
+
+            migrationBuilder.DropTable(
+                name: "Hotel");
 
             migrationBuilder.DropTable(
                 name: "SignUp");

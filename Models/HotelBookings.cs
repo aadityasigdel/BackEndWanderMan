@@ -17,7 +17,7 @@ namespace NewProject.Models
         public Hotel Hotel { get; set; }
 
         public int UserId { get; set; }
-        public LoginC User { get; set; }
+        public AppUser User { get; set; }
 
         public DateTime BookingDate { get; set; }
 

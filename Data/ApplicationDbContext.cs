@@ -18,7 +18,7 @@ namespace NewProject.Data
         public DbSet <Hotel> Hotel { get; set; }
         public DbSet <Travel> Travel { get; set; }
 
-        public DbSet <LoginC> Users {get; set;}
+        public DbSet <AppUser> Users {get; set;}
 
         public DbSet<HotelBookings> HotelBookings { get; set; }
 
@@ -38,7 +38,7 @@ namespace NewProject.Data
                 .HasForeignKey(hb => hb.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<LoginC>()
+            modelBuilder.Entity<AppUser>()
                 .HasIndex(u => u.Email)
                 .IsUnique();
 
